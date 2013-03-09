@@ -30,18 +30,48 @@ public class TelaInicial extends javax.swing.JFrame {
         jmVendas = new javax.swing.JMenu();
         jmCriarPedido = new javax.swing.JMenuItem();
         jmRelatorios = new javax.swing.JMenu();
+        jmRelatorioPedidos = new javax.swing.JMenuItem();
+        jmEstoque = new javax.swing.JMenu();
+        jmConsultaEstoque = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jmVendas.setText("Vendas");
 
         jmCriarPedido.setText("Criar Pedido");
+        jmCriarPedido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmCriarPedidoActionPerformed(evt);
+            }
+        });
         jmVendas.add(jmCriarPedido);
 
         jMenuBar1.add(jmVendas);
 
         jmRelatorios.setText("Relatórios");
+
+        jmRelatorioPedidos.setText("Relatório de Pedidos");
+        jmRelatorioPedidos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmRelatorioPedidosActionPerformed(evt);
+            }
+        });
+        jmRelatorios.add(jmRelatorioPedidos);
+
         jMenuBar1.add(jmRelatorios);
+
+        jmEstoque.setText("Estoque");
+
+        jmConsultaEstoque.setText("Consulta Estoque");
+        jmConsultaEstoque.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmConsultaEstoqueActionPerformed(evt);
+            }
+        });
+        jmEstoque.add(jmConsultaEstoque);
+
+        jMenuBar1.add(jmEstoque);
 
         setJMenuBar(jMenuBar1);
 
@@ -49,15 +79,27 @@ public class TelaInicial extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 593, Short.MAX_VALUE)
+            .addGap(0, 807, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 374, Short.MAX_VALUE)
+            .addGap(0, 502, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jmCriarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmCriarPedidoActionPerformed
+        new Pedidos().setVisible(true);                
+    }//GEN-LAST:event_jmCriarPedidoActionPerformed
+
+    private void jmRelatorioPedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatorioPedidosActionPerformed
+        new Relatório().setVisible(true);
+    }//GEN-LAST:event_jmRelatorioPedidosActionPerformed
+
+    private void jmConsultaEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmConsultaEstoqueActionPerformed
+        new Estoque().setVisible(true);
+    }//GEN-LAST:event_jmConsultaEstoqueActionPerformed
 
     /**
      * @param args the command line arguments
@@ -95,7 +137,10 @@ public class TelaInicial extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jmConsultaEstoque;
     private javax.swing.JMenuItem jmCriarPedido;
+    private javax.swing.JMenu jmEstoque;
+    private javax.swing.JMenuItem jmRelatorioPedidos;
     private javax.swing.JMenu jmRelatorios;
     private javax.swing.JMenu jmVendas;
     // End of variables declaration//GEN-END:variables
