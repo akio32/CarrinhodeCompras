@@ -28,7 +28,7 @@ public class TelaInicial extends javax.swing.JFrame {
 
         jMenuBar1 = new javax.swing.JMenuBar();
         jmVendas = new javax.swing.JMenu();
-        jmCriarPedido = new javax.swing.JMenuItem();
+        jmPedidos = new javax.swing.JMenuItem();
         jmRelatorios = new javax.swing.JMenu();
         jmRelatorioPedidos = new javax.swing.JMenuItem();
         jmEstoque = new javax.swing.JMenu();
@@ -39,13 +39,13 @@ public class TelaInicial extends javax.swing.JFrame {
 
         jmVendas.setText("Vendas");
 
-        jmCriarPedido.setText("Criar Pedido");
-        jmCriarPedido.addActionListener(new java.awt.event.ActionListener() {
+        jmPedidos.setText("Pedidos");
+        jmPedidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jmCriarPedidoActionPerformed(evt);
+                jmPedidosActionPerformed(evt);
             }
         });
-        jmVendas.add(jmCriarPedido);
+        jmVendas.add(jmPedidos);
 
         jMenuBar1.add(jmVendas);
 
@@ -89,9 +89,9 @@ public class TelaInicial extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jmCriarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmCriarPedidoActionPerformed
+    private void jmPedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmPedidosActionPerformed
         new Pedidos().setVisible(true);                
-    }//GEN-LAST:event_jmCriarPedidoActionPerformed
+    }//GEN-LAST:event_jmPedidosActionPerformed
 
     private void jmRelatorioPedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmRelatorioPedidosActionPerformed
         new Relatório().setVisible(true);
@@ -138,8 +138,8 @@ public class TelaInicial extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jmConsultaEstoque;
-    private javax.swing.JMenuItem jmCriarPedido;
     private javax.swing.JMenu jmEstoque;
+    private javax.swing.JMenuItem jmPedidos;
     private javax.swing.JMenuItem jmRelatorioPedidos;
     private javax.swing.JMenu jmRelatorios;
     private javax.swing.JMenu jmVendas;

@@ -27,17 +27,21 @@
               <Component id="jPanel1" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+              <Component id="jbFinalizar" min="-2" pref="90" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+              <Component id="jbCancelar" min="-2" pref="90" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jlValorTotal" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jlValor" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="617" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jlValorTotal" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jlValor" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -48,12 +52,14 @@
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="107" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jbCancelar" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                  <Component id="jbFinalizar" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                   <Component id="jlValorTotal" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jlValor" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="35" max="32767" attributes="0"/>
+              <EmptySpace pref="27" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -83,13 +89,15 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jlProduto" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jcbProdutos" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                           <Component id="jlQuantidade" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jcbQuantidade" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jbAdicionarAoCarrinho" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jlProduto" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jcbProdutos" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -170,6 +178,22 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbFinalizar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Finalizar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbFinalizarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbCancelar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancelar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbCancelarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
