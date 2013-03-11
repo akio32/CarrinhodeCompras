@@ -31,6 +31,7 @@ public class TelaInicial extends javax.swing.JFrame {
         jmDepartamentos = new javax.swing.JMenuItem();
         jmProdutos = new javax.swing.JMenuItem();
         jmRelatorios = new javax.swing.JMenu();
+        jmRelatFiliais = new javax.swing.JMenuItem();
         jmEncaminhamentos = new javax.swing.JMenu();
         jmFiliais = new javax.swing.JMenuItem();
 
@@ -52,6 +53,10 @@ public class TelaInicial extends javax.swing.JFrame {
         jMenuBar1.add(jmManutencao);
 
         jmRelatorios.setText("Relatórios");
+
+        jmRelatFiliais.setText("Filiais");
+        jmRelatorios.add(jmRelatFiliais);
+
         jMenuBar1.add(jmRelatorios);
 
         jmEncaminhamentos.setText("Encaminhamentos");
@@ -122,6 +127,7 @@ public class TelaInicial extends javax.swing.JFrame {
     private javax.swing.JMenuItem jmFiliais;
     private javax.swing.JMenu jmManutencao;
     private javax.swing.JMenuItem jmProdutos;
+    private javax.swing.JMenuItem jmRelatFiliais;
     private javax.swing.JMenu jmRelatorios;
     // End of variables declaration//GEN-END:variables
 }
